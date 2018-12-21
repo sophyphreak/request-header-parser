@@ -12,8 +12,8 @@ app.get("/", function (req, res) {
 });
 
 app.get("/api/whoami", (req, res) => {
-  const language = req.get('accept-language');
   const ipaddress = req.ip.slice(7);
+  const language = req.get('accept-language');
   const software = req.get('user-agent');
   
   const returnedJson = {
